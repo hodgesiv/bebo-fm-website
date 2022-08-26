@@ -1,0 +1,18 @@
+url: "bebo.fm"
+permalink: simple
+timezone: America/New_York
+template_engine: serbea
+
+collections:
+  docs:
+    output: true
+    permalink: "/:collection/:path.*"
+    sort_by: order
+    name: Documentation
+
+pagination:
+  enabled: true
+
+# Environment-specific settings
+development:
+  unpublished: true
